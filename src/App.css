@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.nav-header {
+    display: flex;
+    padding: 10px;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.app-content {
+    height: calc(100vh - 60px);
+    display: flex;
+}
+
+.app-sidebar {
+    display: flex;
+    width: 300px;
+}
+
+.product-container {
+    width: calc(100vw - 300px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 20px;
+}
+
+.product-meta {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ant-card:not(.ant-card-bordered) {
+    border-radius: 0 !important;
+}
+
+.ant-layout-header {
+    background-color: #ffffff;
+}
+
+.filter-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

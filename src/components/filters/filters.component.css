@@ -1,0 +1,11 @@
+.ant-card-body {
+    padding-top:0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.ant-checkbox-group {
+    flex-direction: column;
+}
